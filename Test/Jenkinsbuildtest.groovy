@@ -1,7 +1,7 @@
 pipeline{
     agent any
         stages {
-            stage ("Clone-branch"){
+            stage ("Clone-branch new"){
                 steps{
                     println "clone the repositry into local"
 
