@@ -11,13 +11,13 @@ pipeline{
             }
             stage ("Build"){
                steps{
-                   println " Build the job"
+                   println " Build the job "
                    sh "mvn clean package"
                } 
             }
             stage ("Upload"){
                 steps{
-                    prnitln " depoly the code into branch"
+                    prnitln " depoly the code into any branch"
 
                     sh " ls -lart"
                     sh "aws s3 cp target/hello-*.war s3://pipelineart "
